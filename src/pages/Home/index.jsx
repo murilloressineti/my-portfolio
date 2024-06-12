@@ -1,28 +1,33 @@
-import { Container } from "./styles";
+import { Container, Content } from "./styles";
 
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
+import { InitialIcons } from "../../components/InitialIcons";
+
+import imageBackground from "../../assets/photo.jpg";
 
 export function Home() {
   return (
     <Container>
       <Header/>
 
-      <main>
+      <Content>
         <Section>
           <div class="hero">
-            <p>Olá 👋, sou o Murillo Ressineti</p>
+            <h3>Olá 👋, sou o Murillo Ressineti</h3>
             <h2>FRONT-END DEVELOPER</h2>
             <p>Desenvolvedor front-end comprometido com a criação de soluções web modernas.</p>
 
-            <div></div>
-          </div>
+            <InitialIcons/>
 
-          <div class="background"></div>
+            <div class="background">
+              <img src={imageBackground} alt="Imagem Murillo Ressineti" />
+            </div>
+          </div>
 
         </Section>
 
-      </main>
+      </Content>
 
     </Container>
   );
