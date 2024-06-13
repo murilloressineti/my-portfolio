@@ -19,6 +19,7 @@ export const Content = styled.main`
   grid-area: content;
 
   .hero {
+    margin-bottom: 6.4rem;
 
     h3 {
       font-size: 1.6rem;
@@ -47,7 +48,6 @@ export const Content = styled.main`
 
     .background {
       margin-top: 6.4rem;
-      margin-bottom: 6.4rem;
       text-align: center;
       
       img {
@@ -57,6 +57,46 @@ export const Content = styled.main`
         
         border-radius: 1.6rem;
       }
+    }
+  }
+
+  .projects {
+    margin-bottom: 6.4rem;
+
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 4.4rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: ${({ theme }) => theme.COLORS.GRAY_70};
+      margin-bottom: 6.4rem;
+    }
+
+    .card {
+      text-align: center;
+
+      p {
+        color: ${({ theme }) => theme.COLORS.BLACK};
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 3rem;
+      padding: 0 3rem 0 3rem;
+    }
+
+    .card:last-child {
+      margin-top: 6.4rem;
     }
   }
 
