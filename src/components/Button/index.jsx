@@ -1,12 +1,16 @@
 import { Container } from "./styles";
 
-import arrow from "../../assets/icons/arrow.svg";
+import arrowIcon from "../../assets/icons/arrow.svg";
 
-export function Button({title}){
-    return(
-        <Container>
-            {title}
-            <span><img src={arrow} alt="Arrow"/></span>
-        </Container>
-    )
+export function Button({ title, href }) {
+  return (
+    <Container>
+      <a href={href} target="blank">
+        {title}
+        <span>
+          <img src={arrowIcon} alt="Arrow" />
+        </span>
+      </a>
+    </Container>
+  );
 }

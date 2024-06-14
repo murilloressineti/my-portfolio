@@ -4,10 +4,10 @@ import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
 import { InitialIcons } from "../../components/InitialIcons";
 import { Button } from "../../components/Button";
+import { SkillCard } from "../../components/SkillCard";
 
 import imageBackground from "../../assets/photo.jpg";
-import thumb from "../../assets/Card/thumb.png";
-
+import thumb from "../../assets/card/thumb.png";
 
 export function Home() {
   return (
@@ -39,8 +39,8 @@ export function Home() {
               <p>Site institucional responsivo para gráfica, exibindo serviços, portfólio e contato.</p>
 
               <div className="buttons">
-                <Button title={'Acessar'}></Button>
-                <Button title={'Repositório'}></Button>
+                <Button title={"Acessar"} href={"https://dsrgrafica.com.br/"}></Button>
+                <Button title={"Repositório"} href={"https://github.com/murilloressineti/dsr-grafica"}></Button>
               </div>
             </div>
 
@@ -49,9 +49,30 @@ export function Home() {
               <p>Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.</p>
 
               <div className="buttons">
-                <Button title={'Acessar'}></Button>
-                <Button title={'Repositório'}></Button>
+                <Button title={"Acessar"} href={"https://rockmovies.netlify.app/"}></Button>
+                <Button title={"Repositório"} href={"https://github.com/murilloressineti/rocketmovies-frontend"}></Button>
               </div>
+            </div>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="skills">
+            <h2>Habilidades</h2>
+            <p>Minhas especialidades: técnicas e conhecimentos essenciais para tecnologias web.</p>
+
+            <SkillCard></SkillCard>
+            
+          </div>
+        </Section>
+
+        <Section>
+          <div className="about-me">
+            <h2>Sobre mim</h2>
+            <h3>CONHEÇA + SOBRE MIM </h3>
+
+            <div className="gallery">
+
             </div>
           </div>
         </Section>

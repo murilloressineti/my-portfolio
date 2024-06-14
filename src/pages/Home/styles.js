@@ -56,6 +56,7 @@ export const Content = styled.main`
         width: 100%;
         
         border-radius: 1.6rem;
+        box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
       }
     }
   }
@@ -97,6 +98,32 @@ export const Content = styled.main`
 
     .card:last-child {
       margin-top: 6.4rem;
+    }
+  }
+
+  .skills {
+    margin-bottom: 6.4rem;
+
+    p {
+      font-size: 1.6rem;
+      color: ${({ theme }) => theme.COLORS.GRAY_70};
+      margin-bottom: 6.4rem;
+    }
+
+  }
+
+  .about-me {
+    h3 {
+      font-size: 1.6rem;
+      text-decoration: underline;
+      color: ${({ theme }) => theme.COLORS.GRAY_50};
+
+      margin-top: 1.6rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .gallery {
+      background-color: ${({ theme }) => theme.COLORS.BLUE};
     }
   }
 
