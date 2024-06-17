@@ -19,6 +19,7 @@ export const Content = styled.main`
   grid-area: content;
 
   .hero {
+    padding: 0 1.6rem 0;
     margin-bottom: 6.4rem;
 
     h3 {
@@ -62,6 +63,7 @@ export const Content = styled.main`
   }
 
   .projects {
+    padding: 0 1.6rem 0;
     margin-bottom: 6.4rem;
 
     display: flex;
@@ -102,6 +104,7 @@ export const Content = styled.main`
   }
 
   .skills {
+    padding: 0 1.6rem 0;
     margin-bottom: 6.4rem;
 
     p {
@@ -113,6 +116,9 @@ export const Content = styled.main`
   }
 
   .about-me {
+    padding: 0 1.6rem 0;
+    border-bottom: 2px solid red;
+
     h3 {
       font-size: 1.6rem;
       text-decoration: underline;
@@ -120,10 +126,6 @@ export const Content = styled.main`
 
       margin-top: 1.6rem;
       margin-bottom: 1.6rem;
-    }
-
-    .gallery {
-      background-color: ${({ theme }) => theme.COLORS.BLUE};
     }
   }
 

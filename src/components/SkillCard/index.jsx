@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Container, ImageContainer, Arrow } from "./styles";
 
-import arrowIcon from "../../assets/skill-card/arrow.svg";
-import htmlIcon from "../../assets/skill-card/html.svg";
-import cssIcon from "../../assets/skill-card/css.svg";
-import jsIcon from "../../assets/skill-card/js.svg";
-import reactIcon from "../../assets/skill-card/react.svg";
+import arrowIcon from "../../assets/skills-card/arrow.svg";
+import htmlIcon from "../../assets/skills-card/html.svg";
+import cssIcon from "../../assets/skills-card/css.svg";
+import jsIcon from "../../assets/skills-card/js.svg";
+import reactIcon from "../../assets/skills-card/react.svg";
 
 const images = [htmlIcon, cssIcon, jsIcon, reactIcon];
 
