@@ -10,12 +10,16 @@ export const Container = styled.div`
   gap: 1.5rem;
   background-color: ${({ theme }) => theme.COLORS.BLUE_TRANSPARENT};
   padding-bottom: 6.4rem;
+  overflow: hidden; /* Para esconder as imagens que estiverem fora da área visível */
+
+  transform: ${({ scrollPosition }) =>
+    `translateX(-${scrollPosition * 100}%)`}; /* Ajuste aqui conforme necessário */
+  transition: transform 0.5s ease-in-out; /* Transição suave */
 
   figure {
     img {
       width: 100%;
       height: 100%;
-
       object-fit: cover;
       object-position: center;
     }
@@ -34,10 +38,6 @@ export const Container = styled.div`
   .fig3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-
-    img {
-      object-fit: contain;
-    }
   }
 
   .fig4 {
