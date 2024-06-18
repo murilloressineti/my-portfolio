@@ -6,14 +6,14 @@ export const Container = styled.div`
   grid-template-rows: repeat(3, 1fr);
 
   height: 40rem;
-
+  
   gap: 1.5rem;
   background-color: ${({ theme }) => theme.COLORS.BLUE_TRANSPARENT};
   padding-bottom: 6.4rem;
   overflow: hidden; /* Para esconder as imagens que estiverem fora da área visível */
 
   transform: ${({ scrollPosition }) =>
-    `translateX(-${scrollPosition * 100}%)`}; /* Ajuste aqui conforme necessário */
+    `translateX(-${scrollPosition * 30}%)`}; /* Ajuste aqui conforme necessário */
   transition: transform 0.5s ease-in-out; /* Transição suave */
 
   figure {

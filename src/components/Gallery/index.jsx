@@ -15,7 +15,7 @@ export function Gallery() {
   };
 
   const handleScrollRight = () => {
-    setScrollPosition((prevPosition) => Math.min(prevPosition + 1, 2)); // Adjust this number based on the number of columns you have minus the number visible
+    setScrollPosition((prevPosition) => Math.min(prevPosition + 1, 1)); // Ajuste este valor conforme necessário
   };
 
   return (
