@@ -69,11 +69,13 @@ export function Home() {
 
         <Section>
           <div className="about-me">
-            <h2>Sobre mim</h2>
-            <h3>CONHEÇA + SOBRE MIM </h3>
-          </div>
+            <div className="about-me-subtitle">
+              <h2>Sobre mim</h2>
+              <h3>CONHEÇA + SOBRE MIM </h3>
+            </div>
 
-          <Gallery></Gallery>
+            <Gallery></Gallery>
+          </div>
         </Section>
 
       </Content>

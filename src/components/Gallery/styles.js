@@ -15,6 +15,9 @@ export const Container = styled.div`
     img {
       width: 100%;
       height: 100%;
+
+      object-fit: cover;
+      object-position: center;
     }
   }
 
@@ -31,6 +34,10 @@ export const Container = styled.div`
   .fig3 {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   .fig4 {

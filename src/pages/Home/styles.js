@@ -116,17 +116,22 @@ export const Content = styled.main`
   }
 
   .about-me {
-    padding: 0 1.6rem 0;
-    border-bottom: 2px solid red;
+    .about-me-subtitle {
+      padding: 0  1.6rem 0;
 
-    h3 {
-      font-size: 1.6rem;
-      text-decoration: underline;
-      color: ${({ theme }) => theme.COLORS.GRAY_50};
+      h3 {
+        font-size: 1.6rem;
+        text-decoration: underline;
+        color: ${({ theme }) => theme.COLORS.GRAY_50};
 
-      margin-top: 1.6rem;
-      margin-bottom: 1.6rem;
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+      }
     }
+  }
+
+  Section:nth-of-type(4) {
+    border-bottom: none;
   }
 
 `
