@@ -6,15 +6,16 @@ export const Container = styled.div`
   grid-template-rows: repeat(3, 1fr);
 
   height: 40rem;
+  width: 130%;
   
   gap: 1.5rem;
   background-color: ${({ theme }) => theme.COLORS.BLUE_TRANSPARENT};
   padding-bottom: 6.4rem;
-  overflow: hidden; /* Para esconder as imagens que estiverem fora da área visível */
+  overflow: hidden;
 
   transform: ${({ scrollPosition }) =>
-    `translateX(-${scrollPosition * 30}%)`}; /* Ajuste aqui conforme necessário */
-  transition: transform 0.5s ease-in-out; /* Transição suave */
+    `translateX(-${scrollPosition * 30}%)`};
+  transition: transform 0.5s ease-in-out;
 
   figure {
     img {
@@ -53,5 +54,50 @@ export const Container = styled.div`
   .fig6 {
     grid-column: 3 / 4;
     grid-row: 2 / 4;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  position: absolute;
+  top: 40%;
+  bottom: 60%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-left: 2rem;
+  padding-right: 4rem;
+
+  transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
+  transition: transform 0.5s ease-in-out;
+
+`;
+
+export const StyledButton = styled.button`
+  background-color: ${({ theme }) => theme.COLORS.BLUE_TRANSPARENT};
+  border: none;
+  border-radius: 50%;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    filter: invert(1);
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &.inverted {
+    transform: rotate(180deg);
+  }
+  
+  &:hover {
+    background-color: ${({ theme }) => theme.COLORS.BLUE};
   }
 `;

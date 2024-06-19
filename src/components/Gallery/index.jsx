@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Container } from "./styles";
+import arrowIcon from "../../assets/icons/arrow.svg";
+
+import { Container, ButtonContainer, StyledButton } from "./styles";
 import card1 from "../../assets/about-me/mae.jpg";
 import card2 from "../../assets/about-me/photo-test.jpg";
 import card3 from "../../assets/about-me/anna.jpg";
@@ -15,33 +17,36 @@ export function Gallery() {
   };
 
   const handleScrollRight = () => {
-    setScrollPosition((prevPosition) => Math.min(prevPosition + 1, 1)); // Ajuste este valor conforme necessário
+    setScrollPosition((prevPosition) => Math.min(prevPosition + 1, 1));
   };
 
   return (
-    <>
-      <button onClick={handleScrollLeft}>{'<'}</button>
-      <button onClick={handleScrollRight}>{'>'}</button>
-      <Container scrollPosition={scrollPosition}>
-        <figure className="fig1">
-          <img src={card1} alt="Figura 1" />
-        </figure>
-        <figure className="fig2">
-          <img src={card2} alt="Figura 2" />
-        </figure>
-        <figure className="fig3">
-          <img src={card3} alt="Figura 3" />
-        </figure>
-        <figure className="fig4">
-          <img src={card4} alt="Figura 4" />
-        </figure>
-        <figure className="fig5">
-          <img src={card5} alt="Figura 5" />
-        </figure>
-        <figure className="fig6">
-          <img src={card6} alt="Figura 6" />
-        </figure>
-      </Container>
-    </>
+    <Container scrollPosition={scrollPosition}>
+
+      <ButtonContainer scrollPosition={scrollPosition}>
+        <StyledButton onClick={handleScrollLeft} className="inverted">{<img src={arrowIcon} alt="Arrow" />}</StyledButton>
+        
+        <StyledButton onClick={handleScrollRight}>{<img src={arrowIcon} alt="Arrow" />}</StyledButton>
+      </ButtonContainer>
+
+      <figure className="fig1">
+        <img src={card1} alt="Figura 1" />
+      </figure>
+      <figure className="fig2">
+        <img src={card2} alt="Figura 2" />
+      </figure>
+      <figure className="fig3">
+        <img src={card3} alt="Figura 3" />
+      </figure>
+      <figure className="fig4">
+        <img src={card4} alt="Figura 4" />
+      </figure>
+      <figure className="fig5">
+        <img src={card5} alt="Figura 5" />
+      </figure>
+      <figure className="fig6">
+        <img src={card6} alt="Figura 6" />
+      </figure>
+    </Container>
   );
 }

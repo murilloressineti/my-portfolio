@@ -13,6 +13,8 @@ export const Container = styled.div`
   section:first-child{
     margin-top: 4rem;
   }
+
+  overflow-x: hidden;
 `
 
 export const Content = styled.main`
