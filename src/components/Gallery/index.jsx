@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import arrowIcon from "../../assets/icons/arrow.svg";
-
 import { Container, ButtonContainer, StyledButton } from "./styles";
 import card1 from "../../assets/about-me/mae.jpg";
 import card2 from "../../assets/about-me/photo-test.jpg";
@@ -22,11 +21,17 @@ export function Gallery() {
 
   return (
     <Container scrollPosition={scrollPosition}>
-
       <ButtonContainer scrollPosition={scrollPosition}>
-        <StyledButton onClick={handleScrollLeft} className="inverted">{<img src={arrowIcon} alt="Arrow" />}</StyledButton>
-        
-        <StyledButton onClick={handleScrollRight}>{<img src={arrowIcon} alt="Arrow" />}</StyledButton>
+        {scrollPosition > 0 && (
+          <StyledButton onClick={handleScrollLeft} className="inverted">
+            <img src={arrowIcon} alt="Arrow" />
+          </StyledButton>
+        )}
+        {scrollPosition < 1 && (
+          <StyledButton onClick={handleScrollRight}>
+            <img src={arrowIcon} alt="Arrow" />
+          </StyledButton>
+        )}
       </ButtonContainer>
 
       <figure className="fig1">

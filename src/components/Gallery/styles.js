@@ -64,10 +64,10 @@ export const ButtonContainer = styled.div`
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 
+  padding-right: 6rem;
   padding-left: 2rem;
-  padding-right: 4rem;
 
   transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
   transition: transform 0.5s ease-in-out;
