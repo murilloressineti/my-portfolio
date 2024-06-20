@@ -10,18 +10,24 @@ import card6 from "../../assets/about-me/photo-test.jpg";
 
 export function Gallery() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [isRightClicked, setIsRightClicked] = useState(false);
 
   const handleScrollLeft = () => {
     setScrollPosition((prevPosition) => Math.max(prevPosition - 1, 0));
+    setIsRightClicked(false);
   };
 
   const handleScrollRight = () => {
     setScrollPosition((prevPosition) => Math.min(prevPosition + 1, 1));
+    setIsRightClicked(true);
   };
 
   return (
     <Container scrollPosition={scrollPosition}>
-      <ButtonContainer scrollPosition={scrollPosition}>
+      <ButtonContainer
+        scrollPosition={scrollPosition}
+        isRightClicked={isRightClicked}
+      >
         {scrollPosition > 0 && (
           <StyledButton onClick={handleScrollLeft} className="inverted">
             <img src={arrowIcon} alt="Arrow" />

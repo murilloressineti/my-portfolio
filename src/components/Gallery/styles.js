@@ -64,14 +64,11 @@ export const ButtonContainer = styled.div`
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-
+  justify-content: ${({ isRightClicked }) => (isRightClicked ? 'flex-start' : 'flex-end')};
   padding-right: 6rem;
-  padding-left: 2rem;
-
+  padding-left: 4rem;
   transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
-  transition: transform 0.5s ease-in-out;
-
+  transition: justify-content 0.8s ease-in-out, transform 0.8s ease-in-out;
 `;
 
 export const StyledButton = styled.button`
