@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 15% auto 25% auto;
+  grid-template-rows: 14.5rem auto 14.5rem auto;
 
-  height: 40rem;
-  width: 130%;
+  height: 100%;
+  width: 170%;
   
   gap: 1.5rem;
   background-color: ${({ theme }) => theme.COLORS.BLUE_TRANSPARENT};
@@ -14,7 +14,7 @@ export const Container = styled.div`
   overflow: hidden;
 
   transform: ${({ scrollPosition }) =>
-    `translateX(-${scrollPosition * 30}%)`};
+    `translateX(-${scrollPosition * 40}%)`};
   transition: transform 0.5s ease-in-out;
 
   figure {
@@ -65,8 +65,8 @@ export const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: ${({ isRightClicked }) => (isRightClicked ? 'flex-start' : 'flex-end')};
-  padding-right: 6rem;
-  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-left: 17rem;
   transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
   transition: justify-content 0.8s ease-in-out, transform 0.8s ease-in-out;
 `;

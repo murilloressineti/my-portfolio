@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import arrowIcon from "../../assets/icons/arrow.svg";
 import { Container, ButtonContainer, StyledButton } from "./styles";
 import card1 from "../../assets/about-me/mae.jpg";
-import card2 from "../../assets/about-me/photo-test.jpg";
+import card2 from "../../assets/about-me/woman-test.png";
 import card3 from "../../assets/about-me/anna.jpg";
 import card4 from "../../assets/about-me/photo-test.jpg";
 import card5 from "../../assets/about-me/guitar.jpg";
-import card6 from "../../assets/about-me/photo-test.jpg";
+import card6 from "../../assets/about-me/man-test.png";
 
 export function Gallery() {
   const [scrollPosition, setScrollPosition] = useState(0);
