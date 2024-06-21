@@ -8,7 +8,8 @@ export const Container = styled.div`
   grid-template-rows: 7.5rem auto;
   grid-template-areas:
     "header"
-    "content";
+    "content"
+    "footer";
 
   section:first-child{
     margin-top: 4rem;
@@ -136,4 +137,11 @@ export const Content = styled.main`
     border-bottom: none;
   }
 
+  .form {
+    padding: 0 1.6rem 0;
+  }
+
+  Section:nth-of-type(5) {
+    border: none;
+  }
 `

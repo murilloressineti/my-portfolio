@@ -42,8 +42,8 @@ export const Container = styled.button`
   }
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     background-color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
   }
 
@@ -52,7 +52,7 @@ export const Container = styled.button`
   }
 
   &:active {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-.2rem);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
   }
 `;

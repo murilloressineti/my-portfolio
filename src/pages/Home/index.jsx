@@ -6,6 +6,8 @@ import { InitialIcons } from "../../components/InitialIcons";
 import { Button } from "../../components/Button";
 import { SkillCard } from "../../components/SkillCard";
 import { Gallery } from "../../components/Gallery";
+import { Form } from "../../components/Form";
+import { Footer } from "../../components/Footer";
 
 import imageBackground from "../../assets/photo.jpg";
 import projectsCard from "../../assets/projects-card/thumb.png";
@@ -78,7 +80,14 @@ export function Home() {
           </div>
         </Section>
 
+        <Section>
+          <div className="form">
+            <Form></Form>
+          </div>
+        </Section>
       </Content>
+
+      <Footer></Footer>
 
     </Container>
   );
