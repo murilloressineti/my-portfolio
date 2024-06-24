@@ -1,4 +1,5 @@
 import { Container, Content } from "./styles";
+import { Link } from "react-router-dom";
 
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
@@ -106,7 +107,9 @@ export function Home() {
           <div className="about-me">
             <div className="about-me-subtitle">
               <h2>Sobre mim</h2>
-              <h3>CONHEÇA + SOBRE MIM </h3>
+              <Link to="/sobre-mim">
+                <h3>Conheça + sobre mim</h3>
+              </Link>
             </div>
 
             <Gallery></Gallery>

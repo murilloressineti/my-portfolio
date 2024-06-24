@@ -128,6 +128,11 @@ export const Content = styled.main`
 
         margin-top: 1.6rem;
         margin-bottom: 1.6rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+        color: ${({ theme }) => theme.COLORS.GRAY_70};
+      }
       }
     }
   }

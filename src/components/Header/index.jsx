@@ -1,9 +1,12 @@
 import { Container } from "./styles";
+import { Link } from "react-router-dom";
 
 export function Header() {
   return (
     <Container>
-      <h1>Ressineti.dev</h1>
+      <Link to={"/"}>
+        <h1>Ressineti.dev</h1>
+      </Link>
     </Container>
   );
 }

@@ -16,4 +16,8 @@ export const Container = styled.header`
   align-items: center;
 
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+
+  a {
+    color: ${({ theme }) => theme.COLORS.GRAY_50};
+  }
 `;
