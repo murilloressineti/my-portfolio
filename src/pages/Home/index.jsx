@@ -20,7 +20,7 @@ export function Home() {
 
       <Content>
         <Section>
-          <div class="hero">
+          <div id="hero" class="hero">
             <h3>Olá 👋, sou o Murillo Ressineti</h3>
             <h2>FRONT-END DEVELOPER</h2>
             <p>
@@ -37,7 +37,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div className="projects">
+          <div id="projects" className="projects">
             <h2>Projetos</h2>
             <p>
               Meus trabalhos recentes: exemplos concretos das minhas capacidades
@@ -92,7 +92,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div className="skills">
+          <div id="skills" className="skills">
             <h2>Habilidades</h2>
             <p>
               Minhas especialidades: técnicas e conhecimentos essenciais para
@@ -104,7 +104,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div className="about-me">
+          <div id="about-me" className="about-me">
             <div className="about-me-subtitle">
               <h2>Sobre mim</h2>
               <Link to="/sobre-mim">
@@ -117,7 +117,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div className="form">
+          <div id="form" className="form">
             <Form />
           </div>
         </Section>
