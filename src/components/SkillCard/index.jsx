@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { Container, ImageContainer, Arrow } from "./styles";
 
 import arrowIcon from "../../assets/skills-card/arrow.svg";
@@ -17,10 +17,12 @@ export function SkillCard() {
     if (!isTransitioning) {
       setIsTransitioning(true);
       setTimeout(() => {
-        if (direction === 'left') {
+        if (direction === "left") {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        } else if (direction === 'right') {
-          setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+        } else if (direction === "right") {
+          setCurrentIndex(
+            (prevIndex) => (prevIndex - 1 + images.length) % images.length
+          );
         }
         setIsTransitioning(false);
       }, 300);
@@ -37,26 +39,31 @@ export function SkillCard() {
 
     const handleTouchEnd = (e) => {
       touchEndX = e.changedTouches[0].screenX;
-      if (touchEndX < touchStartX) handleSwipe('left');
-      if (touchEndX > touchStartX) handleSwipe('right');
+      if (touchEndX < touchStartX) handleSwipe("left");
+      if (touchEndX > touchStartX) handleSwipe("right");
     };
 
-    window.addEventListener('touchstart', handleTouchStart);
-    window.addEventListener('touchend', handleTouchEnd);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
-      window.removeEventListener('touchstart', handleTouchStart);
-      window.removeEventListener('touchend', handleTouchEnd);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
 
   return (
     <Container>
-      <Arrow src={arrowIcon} alt="arrow" className="inverted" onClick={() => handleSwipe('right')} />
+      <Arrow
+        src={arrowIcon}
+        alt="arrow"
+        className="inverted"
+        onClick={() => handleSwipe("right")}
+      />
       <ImageContainer isTransitioning={isTransitioning}>
         <img src={images[currentIndex]} alt="skill" />
       </ImageContainer>
-      <Arrow src={arrowIcon} alt="arrow" onClick={() => handleSwipe('left')} />
+      <Arrow src={arrowIcon} alt="arrow" onClick={() => handleSwipe("left")} />
     </Container>
   );
 }

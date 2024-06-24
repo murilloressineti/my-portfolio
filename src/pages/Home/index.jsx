@@ -15,16 +15,19 @@ import projectsCard from "../../assets/projects-card/thumb.png";
 export function Home() {
   return (
     <Container>
-      <Header/>
+      <Header />
 
       <Content>
         <Section>
           <div class="hero">
             <h3>Olá 👋, sou o Murillo Ressineti</h3>
             <h2>FRONT-END DEVELOPER</h2>
-            <p>Desenvolvedor front-end comprometido com a criação de soluções web modernas.</p>
+            <p>
+              Desenvolvedor front-end comprometido com a criação de soluções web
+              modernas.
+            </p>
 
-            <InitialIcons/>
+            <InitialIcons />
 
             <div class="background">
               <img src={imageBackground} alt="Imagem Murillo Ressineti" />
@@ -35,25 +38,53 @@ export function Home() {
         <Section>
           <div className="projects">
             <h2>Projetos</h2>
-            <p>Meus trabalhos recentes: exemplos concretos das minhas capacidades técnicas.</p>
+            <p>
+              Meus trabalhos recentes: exemplos concretos das minhas capacidades
+              técnicas.
+            </p>
 
             <div className="card">
-              <img src={projectsCard} alt="Card demonstrando projeto realizado"/>
-              <p>Site institucional responsivo para gráfica, exibindo serviços, portfólio e contato.</p>
+              <img
+                src={projectsCard}
+                alt="Card demonstrando projeto realizado"
+              />
+              <p>
+                Site institucional responsivo para gráfica, exibindo serviços,
+                portfólio e contato.
+              </p>
 
               <div className="buttons">
-                <Button title={"Acessar"} href={"https://dsrgrafica.com.br/"}></Button>
-                <Button title={"Repositório"} href={"https://github.com/murilloressineti/dsr-grafica"}></Button>
+                <Button
+                  title={"Acessar"}
+                  href={"https://dsrgrafica.com.br/"}
+                ></Button>
+                <Button
+                  title={"Repositório"}
+                  href={"https://github.com/murilloressineti/dsr-grafica"}
+                ></Button>
               </div>
             </div>
 
             <div className="card">
-              <img src={projectsCard} alt="Card demonstrando projeto realizado"/>
-              <p>Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.</p>
+              <img
+                src={projectsCard}
+                alt="Card demonstrando projeto realizado"
+              />
+              <p>
+                Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.
+              </p>
 
               <div className="buttons">
-                <Button title={"Acessar"} href={"https://rockmovies.netlify.app/"}></Button>
-                <Button title={"Repositório"} href={"https://github.com/murilloressineti/rocketmovies-frontend"}></Button>
+                <Button
+                  title={"Acessar"}
+                  href={"https://rockmovies.netlify.app/"}
+                ></Button>
+                <Button
+                  title={"Repositório"}
+                  href={
+                    "https://github.com/murilloressineti/rocketmovies-frontend"
+                  }
+                ></Button>
               </div>
             </div>
           </div>
@@ -62,10 +93,12 @@ export function Home() {
         <Section>
           <div className="skills">
             <h2>Habilidades</h2>
-            <p>Minhas especialidades: técnicas e conhecimentos essenciais para tecnologias web.</p>
+            <p>
+              Minhas especialidades: técnicas e conhecimentos essenciais para
+              tecnologias web.
+            </p>
 
             <SkillCard></SkillCard>
-            
           </div>
         </Section>
 
@@ -82,13 +115,12 @@ export function Home() {
 
         <Section>
           <div className="form">
-            <Form></Form>
+            <Form />
           </div>
         </Section>
       </Content>
 
-      <Footer></Footer>
-
+      <Footer />
     </Container>
   );
 }

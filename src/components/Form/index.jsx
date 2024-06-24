@@ -39,7 +39,9 @@ export function Form() {
           ></textarea>
         </div>
 
-        <button type="submit">Enviar Mensagem <img src={paperPlane} alt="paperPlane" /></button>
+        <button type="submit">
+          Enviar Mensagem <img src={paperPlane} alt="paperPlane" />
+        </button>
       </fieldset>
     </Container>
   );

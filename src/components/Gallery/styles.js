@@ -7,14 +7,13 @@ export const Container = styled.div`
 
   height: 100%;
   width: 170%;
-  
+
   gap: 1.5rem;
   background-color: ${({ theme }) => theme.COLORS.BLUE_TRANSPARENT};
   padding-bottom: 6.4rem;
   overflow: hidden;
 
-  transform: ${({ scrollPosition }) =>
-    `translateX(-${scrollPosition * 40}%)`};
+  transform: ${({ scrollPosition }) => `translateX(-${scrollPosition * 40}%)`};
   transition: transform 0.5s ease-in-out;
 
   figure {
@@ -64,7 +63,8 @@ export const ButtonContainer = styled.div`
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: ${({ isRightClicked }) => (isRightClicked ? 'flex-start' : 'flex-end')};
+  justify-content: ${({ isRightClicked }) =>
+    isRightClicked ? "flex-start" : "flex-end"};
   padding-right: 4rem;
   padding-left: 17rem;
   transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
@@ -93,7 +93,7 @@ export const StyledButton = styled.button`
   &.inverted {
     transform: rotate(180deg);
   }
-  
+
   &:hover {
     background-color: ${({ theme }) => theme.COLORS.BLUE};
   }

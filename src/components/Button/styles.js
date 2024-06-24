@@ -18,7 +18,7 @@ export const Container = styled.button`
 
   box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease,
-  background-color 0.3s ease;
+    background-color 0.3s ease;
 
   a {
     display: flex;
@@ -42,7 +42,7 @@ export const Container = styled.button`
   }
 
   &:hover {
-    transform: translateY(-.5rem);
+    transform: translateY(-0.5rem);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     background-color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
   }
@@ -52,7 +52,7 @@ export const Container = styled.button`
   }
 
   &:active {
-    transform: translateY(-.2rem);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   }
 `;

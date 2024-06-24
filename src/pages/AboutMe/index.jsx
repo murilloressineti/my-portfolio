@@ -3,11 +3,13 @@ import { Container, Content } from "./styles";
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
 import { InitialIcons } from "../../components/InitialIcons";
+import { Form } from "../../components/Form";
+import { Footer } from "../../components/Footer";
 
 import imageBackgroundAboutMe from "../../assets/photo.jpg";
 
 export function AboutMe() {
-  return(
+  return (
     <Container>
       <Header></Header>
 
@@ -16,20 +18,46 @@ export function AboutMe() {
           <div className="about-me">
             <h2>Sobre mim</h2>
 
-            <h4>Desenvolvedor front-end comprometido com a criação de soluções web modernas.</h4>
+            <h4>
+              Desenvolvedor front-end comprometido com a criação de soluções web
+              modernas.
+            </h4>
 
-            <p>Minha jornada na tecnologia começou com o estudo de Python, mas logo descobri meu interesse pelo front-end. Determinado a aprimorar minhas habilidades, ingressei no bootcamp da Rocketseat, onde aprendi tecnologias web full-stack como HTML, CSS, JavaScript, React e Node.js.</p>
+            <p>
+              Minha jornada na tecnologia começou com o estudo de Python, mas
+              logo descobri meu interesse pelo front-end. Determinado a
+              aprimorar minhas habilidades, ingressei no bootcamp da Rocketseat,
+              onde aprendi tecnologias web full-stack como HTML, CSS,
+              JavaScript, React e Node.js.
+            </p>
 
-            <p>Atualmente, estou focado na transição de carreira e trabalho como desenvolvedor freelancer, criando landing pages e páginas institucionais que atendem às necessidades específicas de cada cliente.</p>
+            <p>
+              Atualmente, estou focado na transição de carreira e trabalho como
+              desenvolvedor freelancer, criando landing pages e páginas
+              institucionais que atendem às necessidades específicas de cada
+              cliente.
+            </p>
 
-            <p>Quando não estou programando, gosto de tocar guitarra, ler livros, ir à academia, jogar videogame, assistir futebol e Fórmula 1, além de passar tempo com minha namorada e nossa cachorrinha.</p>
+            <p>
+              Quando não estou programando, gosto de tocar guitarra, ler livros,
+              ir à academia, jogar videogame, assistir futebol e Fórmula 1, além
+              de passar tempo com minha namorada e nossa cachorrinha.
+            </p>
 
-            <p>Estou sempre em busca de crescimento pessoal e profissional. Acredito em projetos que realmente façam a diferença no dia a dia das pessoas, resolvendo problemas e facilitando a vida, contribuindo assim para um mundo mais conectado e eficiente.</p>
+            <p>
+              Estou sempre em busca de crescimento pessoal e profissional.
+              Acredito em projetos que realmente façam a diferença no dia a dia
+              das pessoas, resolvendo problemas e facilitando a vida,
+              contribuindo assim para um mundo mais conectado e eficiente.
+            </p>
 
-            <InitialIcons/>
+            <InitialIcons />
 
             <div class="background">
-              <img src={imageBackgroundAboutMe} alt="Imagem Murillo Ressineti" />
+              <img
+                src={imageBackgroundAboutMe}
+                alt="Imagem Murillo Ressineti"
+              />
             </div>
           </div>
         </Section>
@@ -38,14 +66,50 @@ export function AboutMe() {
           <div className="skills">
             <h2>Habilidades</h2>
 
-            <p>Busco constantemente aprendizado e aprimoramento. Trabalho com tecnologias do lado front-end e back-end, focando em criar interfaces web responsivas e intuitivas para projetos de alta qualidade.</p>
-          
+            <p>
+              Busco constantemente aprendizado e aprimoramento. Trabalho com
+              tecnologias do lado front-end e back-end, focando em criar
+              interfaces web responsivas e intuitivas para projetos de alta
+              qualidade.
+            </p>
+
             <div className="tags">
-              
+              <span className="tag">HTML</span>
+              <span className="tag">CSS</span>
+              <span className="tag">JavaScript</span>
+              <span className="tag">React</span>
+              <span className="tag">Node.js</span>
+              <span className="tag">MySQL</span>
+              <span className="tag">Figma</span>
             </div>
           </div>
         </Section>
+
+        <Section>
+          <div className="experience">
+            <h2>Experiência</h2>
+
+            <h4>Desenvolvedor Freelancer</h4>
+
+            <p>Jun 2024 — Presente</p>
+
+            <p>
+              Como freelancer, crio páginas institucionais e landing pages
+              personalizadas. Utilizo JavaScript, React, HTML, CSS e Figma para
+              desenvolver experiências web de alta qualidade, garantindo a
+              satisfação do cliente e a usabilidade do produto.
+            </p>
+          </div>
+        </Section>
+
+        <Section>
+          <div className="form">
+            <Form></Form>
+          </div>
+        </Section>
       </Content>
+
+      <Footer />
     </Container>
-  )
+  );
 }

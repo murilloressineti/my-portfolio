@@ -11,12 +11,12 @@ export const Container = styled.div`
     "content"
     "footer";
 
-  section:first-child{
+  section:first-child {
     margin-top: 4rem;
   }
 
   overflow-x: hidden;
-`
+`;
 
 export const Content = styled.main`
   grid-area: content;
@@ -53,12 +53,12 @@ export const Content = styled.main`
     .background {
       margin-top: 6.4rem;
       text-align: center;
-      
+
       img {
         object-fit: cover;
         height: 40rem;
         width: 100%;
-        
+
         border-radius: 1.6rem;
         box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
       }
@@ -115,12 +115,11 @@ export const Content = styled.main`
       color: ${({ theme }) => theme.COLORS.GRAY_70};
       margin-bottom: 6.4rem;
     }
-
   }
 
   .about-me {
     .about-me-subtitle {
-      padding: 0  1.6rem 0;
+      padding: 0 1.6rem 0;
 
       h3 {
         font-size: 1.6rem;
@@ -144,4 +143,4 @@ export const Content = styled.main`
   Section:nth-of-type(5) {
     border: none;
   }
-`
+`;

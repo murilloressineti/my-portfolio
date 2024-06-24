@@ -7,7 +7,7 @@ export const Container = styled.form`
 
   fieldset {
     border: none;
-    border-bottom: .1rem solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
     padding-bottom: 6.4rem;
 
     width: 100%;
@@ -32,13 +32,14 @@ export const Container = styled.form`
     width: 100%;
     padding: 1.2rem 1.8rem;
     margin-bottom: 3rem;
-    border: .1rem solid rgba(0, 0, 0, 0.1);
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
     border-radius: 2rem;
-    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.1), 0 .1rem .3rem rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1),
+      0 0.1rem 0.3rem rgba(0, 0, 0, 0.08);
 
     &:focus {
       outline: none;
-      box-shadow: 0 0 0 .3rem rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 0 0.3rem rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -60,12 +61,12 @@ export const Container = styled.form`
     align-items: center;
     gap: 1.5rem;
 
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+      box-shadow 0.3s ease;
 
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
   }
-
 `;
