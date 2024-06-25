@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.header`
   grid-area: header;
@@ -35,7 +35,7 @@ export const MenuToggle = styled.button`
     width: 2rem;
     height: 2rem;
 
-    &:hover{
+    &:hover {
       color: ${({ theme }) => theme.COLORS.BLUE};
     }
   }
@@ -46,18 +46,34 @@ export const MenuToggle = styled.button`
 `;
 
 export const Nav = styled.nav`
-  display: ${({ isOpen }) => (isOpen ? "block" : "none")};
   position: absolute;
   top: 7.5rem;
   right: 0;
   width: 10%;
   background-color: ${({ theme }) => theme.COLORS.WHITE};
   box-shadow: -0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease;
+
+  ${({ isOpen }) =>
+    isOpen &&
+    css`
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition: opacity 0.3s ease, visibility 0s linear, transform 0.3s ease;
+    `}
 
   @media (min-width: 768px) {
-    display: flex;
     position: static;
+    display: flex;
     width: auto;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    box-shadow: none;
   }
 `;
 

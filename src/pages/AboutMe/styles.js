@@ -10,10 +10,10 @@ export const Container = styled.div`
     "header"
     "content"
     "footer";
-
+       
   header {
     justify-content: center;
-
+    
    button {
     display: none;
    }
