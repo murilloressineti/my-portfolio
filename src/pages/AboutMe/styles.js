@@ -14,7 +14,7 @@ export const Container = styled.div`
   header {
     justify-content: center;
 
-   .menu-toggle {
+   button {
     display: none;
    }
   }

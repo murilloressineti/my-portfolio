@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Container, Nav, NavMenu, MenuToggle } from "./styles";
 import { Link } from "react-router-dom";
 import { FaBars, FaProjectDiagram, FaLaptopCode, FaUser, FaEnvelope } from "react-icons/fa";
@@ -20,7 +20,7 @@ export function Header() {
       <Link to={"/"}>
         <h1>Ressineti.dev</h1>
       </Link>
-      <MenuToggle onClick={handleToggle}>
+      <MenuToggle isOpen={isOpen} onClick={handleToggle}>
         <FaBars />
       </MenuToggle>
       <Nav isOpen={isOpen}>

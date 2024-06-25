@@ -11,6 +11,12 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  z-index: 1000;
 
   a {
     color: ${({ theme }) => theme.COLORS.GRAY_50};
@@ -21,13 +27,17 @@ export const MenuToggle = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: ${({ theme }) => theme.COLORS.GRAY_50};
+  color: ${({ theme, isOpen }) => (isOpen ? theme.COLORS.BLUE : theme.COLORS.GRAY_50)};
   display: flex;
   align-items: center;
 
   svg {
     width: 2rem;
     height: 2rem;
+
+    &:hover{
+      color: ${({ theme }) => theme.COLORS.BLUE};
+    }
   }
 
   @media (min-width: 768px) {
@@ -41,7 +51,8 @@ export const Nav = styled.nav`
   top: 7.5rem;
   right: 0;
   width: 10%;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_50};
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
+  box-shadow: -0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
 
   @media (min-width: 768px) {
     display: flex;
