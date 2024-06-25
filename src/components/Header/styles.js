@@ -90,6 +90,7 @@ export const NavMenu = styled.ul`
       background: none;
       border: none;
       font-size: 1.6rem;
+      font-weight: bold;
       color: ${({ theme }) => theme.COLORS.GRAY_50};
       cursor: pointer;
 
