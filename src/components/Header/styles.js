@@ -90,10 +90,14 @@ export const NavMenu = styled.ul`
     button {
       background: none;
       border: none;
-      font-size: 2rem;
-      font-weight: bolder;
+      font-size: 1.6rem;
+      font-weight: bold;
       color: ${({ theme }) => theme.COLORS.GRAY_50};
       cursor: pointer;
+
+      svg {
+        font-size: 2rem;
+      }
 
       &:hover {
         color: ${({ theme }) => theme.COLORS.BLUE};

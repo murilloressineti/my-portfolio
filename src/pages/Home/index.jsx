@@ -37,14 +37,14 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="projects" className="projects">
+          <div id="projects" class="projects">
             <h2>Projetos</h2>
             <p>
               Meus trabalhos recentes: exemplos concretos das minhas capacidades
               técnicas.
             </p>
 
-            <div className="card">
+            <div class="card">
               <img
                 src={projectsCard}
                 alt="Card demonstrando projeto realizado"
@@ -54,7 +54,7 @@ export function Home() {
                 portfólio e contato.
               </p>
 
-              <div className="buttons">
+              <div class="buttons">
                 <Button
                   title={"Acessar"}
                   href={"https://dsrgrafica.com.br/"}
@@ -66,7 +66,7 @@ export function Home() {
               </div>
             </div>
 
-            <div className="card">
+            <div class="card">
               <img
                 src={projectsCard}
                 alt="Card demonstrando projeto realizado"
@@ -75,7 +75,7 @@ export function Home() {
                 Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.
               </p>
 
-              <div className="buttons">
+              <div class="buttons">
                 <Button
                   title={"Acessar"}
                   href={"https://rockmovies.netlify.app/"}
@@ -92,7 +92,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="skills" className="skills">
+          <div id="skills" class="skills">
             <h2>Habilidades</h2>
             <p>
               Minhas especialidades: técnicas e conhecimentos essenciais para
@@ -104,8 +104,8 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="about-me" className="about-me">
-            <div className="about-me-subtitle">
+          <div id="about-me" class="about-me">
+            <div class="about-me-subtitle">
               <h2>Sobre mim</h2>
               <Link to="/sobre-mim">
                 <h3>Conheça + sobre mim</h3>
@@ -117,7 +117,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="form" className="form">
+          <div id="form" class="form">
             <Form />
           </div>
         </Section>

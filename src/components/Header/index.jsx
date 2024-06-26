@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Nav, NavMenu, MenuToggle } from "./styles";
 import { Link } from "react-router-dom";
-import { FaBars} from "react-icons/fa";
-import { AiOutlineFundProjectionScreen, AiOutlineTool, AiOutlineUser, AiOutlineMail  } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
+import { AiOutlineFundProjectionScreen, AiOutlineTool, AiOutlineUser, AiOutlineMail } from "react-icons/ai";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,7 +55,7 @@ export function Header() {
           </li>
           <li>
             <button onClick={() => handleScrollToSection("form")}>
-              {isMobile ? <AiOutlineMail  /> : "Contato"}
+              {isMobile ? <AiOutlineMail /> : "Contato"}
             </button>
           </li>
         </NavMenu>
