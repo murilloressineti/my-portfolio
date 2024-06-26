@@ -34,6 +34,7 @@ export const MenuToggle = styled.button`
   svg {
     width: 2rem;
     height: 2rem;
+    transition: color 0.2s ease;
 
     &:hover {
       color: ${({ theme }) => theme.COLORS.BLUE};
@@ -89,8 +90,8 @@ export const NavMenu = styled.ul`
     button {
       background: none;
       border: none;
-      font-size: 1.6rem;
-      font-weight: bold;
+      font-size: 2rem;
+      font-weight: bolder;
       color: ${({ theme }) => theme.COLORS.GRAY_50};
       cursor: pointer;
 

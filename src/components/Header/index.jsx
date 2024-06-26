@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Container, Nav, NavMenu, MenuToggle } from "./styles";
 import { Link } from "react-router-dom";
-import { FaBars, FaProjectDiagram, FaLaptopCode, FaUser, FaEnvelope } from "react-icons/fa";
+import { FaBars} from "react-icons/fa";
+import { AiOutlineFundProjectionScreen, AiOutlineTool, AiOutlineUser, AiOutlineMail  } from "react-icons/ai";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,22 +40,22 @@ export function Header() {
         <NavMenu>
           <li>
             <button onClick={() => handleScrollToSection("projects")}>
-              {isMobile ? <FaProjectDiagram /> : "Projetos"}
+              {isMobile ? <AiOutlineFundProjectionScreen /> : "Projetos"}
             </button>
           </li>
           <li>
             <button onClick={() => handleScrollToSection("skills")}>
-              {isMobile ? <FaLaptopCode /> : "Habilidades"}
+              {isMobile ? <AiOutlineTool /> : "Habilidades"}
             </button>
           </li>
           <li>
             <button onClick={() => handleScrollToSection("about-me")}>
-              {isMobile ? <FaUser /> : "Sobre Mim"}
+              {isMobile ? <AiOutlineUser /> : "Sobre Mim"}
             </button>
           </li>
           <li>
             <button onClick={() => handleScrollToSection("form")}>
-              {isMobile ? <FaEnvelope /> : "Contato"}
+              {isMobile ? <AiOutlineMail  /> : "Contato"}
             </button>
           </li>
         </NavMenu>
