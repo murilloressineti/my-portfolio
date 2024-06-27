@@ -62,6 +62,12 @@ export const Container = styled.div`
     }
   }
 
+  @media (min-width: 768px) {
+    .download {
+      font-size: 1.6rem;
+    }   
+  } 
+
   .linkedin,
   .github {
     width: 4.8rem;
@@ -79,4 +85,12 @@ export const Container = styled.div`
       border-radius: 50%;
     }
   }
+
+  @media (min-width: 768px) {
+    .linkedin,
+    .github {
+      width: 5.4rem;
+      height: 5.4rem;
+    }   
+  } 
 `;

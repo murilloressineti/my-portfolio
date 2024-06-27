@@ -28,7 +28,6 @@ export const Content = styled.main`
     h3 {
       font-size: 1.6rem;
       margin-bottom: 1rem;
-
       color: ${({ theme }) => theme.COLORS.GRAY_70};
       max-width: 21.5rem;
     }
@@ -44,9 +43,7 @@ export const Content = styled.main`
       font-size: 1.6rem;
       font-weight: normal;
       line-height: 160%;
-
       color: ${({ theme }) => theme.COLORS.GRAY_70};
-
       margin-bottom: 3.2rem;
     }
 
@@ -58,7 +55,6 @@ export const Content = styled.main`
         object-fit: cover;
         height: 40rem;
         width: 100%;
-
         border-radius: 1.6rem;
         box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
       }
@@ -68,7 +64,6 @@ export const Content = styled.main`
   .projects {
     padding: 0 1.6rem 0;
     margin-bottom: 6.4rem;
-
     display: flex;
     flex-direction: column;
 
@@ -125,14 +120,13 @@ export const Content = styled.main`
         font-size: 1.6rem;
         text-decoration: underline;
         color: ${({ theme }) => theme.COLORS.GRAY_50};
-
         margin-top: 1.6rem;
         margin-bottom: 1.6rem;
         transition: color 0.3s ease;
 
         &:hover {
-        color: ${({ theme }) => theme.COLORS.GRAY_70};
-      }
+          color: ${({ theme }) => theme.COLORS.GRAY_70};
+        }
       }
     }
   }
@@ -147,5 +141,121 @@ export const Content = styled.main`
 
   Section:nth-of-type(5) {
     border: none;
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 14rem;
+      margin-bottom: 12.8rem;
+
+      .hero-content {
+        width: 45rem;
+
+        h3 {
+          font-size: 3rem;
+          max-width: none;
+        }
+
+        h2 {
+          font-size: 12.8rem;
+          max-width: none;
+        }
+
+        p {
+          margin-top: 0;
+          margin-bottom: 4rem;
+          font-size: 1.8rem;
+        }
+      }
+
+      .background {
+        img {
+          width: auto;
+          height: 60rem;
+        }
+      }
+    }
+
+    .projects {
+      padding: 0 14rem;
+      margin-bottom: 12.8rem;
+
+      .projects-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+          font-size: 7.6rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 14rem;
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin-top: 0;
+        }
+
+        .buttons {
+          width: 35rem;
+        }
+      }
+    }
+
+    .skills {
+      padding: 0 14rem;
+      margin-bottom: 12.8rem;
+
+      .skills-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        h2 {
+          font-size: 7.6rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 3.2rem;
+
+      .about-me-subtitle h3 {
+        font-size: 2rem;
+      }
+    }
+
+    .form {
+      display: flex;
+      justify-content: center;
+      padding: 0 3.2rem;
+    }
   }
 `;

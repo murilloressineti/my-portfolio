@@ -21,14 +21,15 @@ export function Home() {
       <Content>
         <Section>
           <div id="hero" class="hero">
-            <h3>Olá 👋, sou o Murillo Ressineti</h3>
-            <h2>FRONT-END DEVELOPER</h2>
-            <p>
-              Desenvolvedor front-end comprometido com a criação de soluções web
-              modernas.
-            </p>
-
-            <InitialIcons />
+            <div class="hero-content">
+              <h3>Olá 👋, sou o Murillo Ressineti</h3>
+              <h2>FRONT-END DEVELOPER</h2>
+              <p>
+                Desenvolvedor front-end comprometido com a criação de soluções web
+                modernas.
+              </p>
+              <InitialIcons />
+            </div>
 
             <div class="background">
               <img src={imageBackground} alt="Imagem Murillo Ressineti" />
@@ -38,54 +39,55 @@ export function Home() {
 
         <Section>
           <div id="projects" class="projects">
-            <h2>Projetos</h2>
-            <p>
-              Meus trabalhos recentes: exemplos concretos das minhas capacidades
-              técnicas.
-            </p>
-
-            <div class="card">
-              <img
-                src={projectsCard}
-                alt="Card demonstrando projeto realizado"
-              />
+            <div className="projects-content">
+              <h2>Projetos</h2>
               <p>
-                Site institucional responsivo para gráfica, exibindo serviços,
-                portfólio e contato.
+                Meus trabalhos recentes: exemplos concretos das minhas capacidades
+                técnicas.
               </p>
-
-              <div class="buttons">
-                <Button
-                  title={"Acessar"}
-                  href={"https://dsrgrafica.com.br/"}
-                ></Button>
-                <Button
-                  title={"Repositório"}
-                  href={"https://github.com/murilloressineti/dsr-grafica"}
-                ></Button>
-              </div>
             </div>
 
-            <div class="card">
-              <img
-                src={projectsCard}
-                alt="Card demonstrando projeto realizado"
-              />
-              <p>
-                Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.
-              </p>
-
-              <div class="buttons">
-                <Button
-                  title={"Acessar"}
-                  href={"https://rockmovies.netlify.app/"}
-                ></Button>
-                <Button
-                  title={"Repositório"}
-                  href={
-                    "https://github.com/murilloressineti/rocketmovies-frontend"
-                  }
-                ></Button>
+            <div className="cards">
+              <div class="card">
+                <img
+                  src={projectsCard}
+                  alt="Card demonstrando projeto realizado"
+                />
+                <p>
+                  Site institucional responsivo para gráfica, exibindo serviços,
+                  portfólio e contato.
+                </p>
+                <div class="buttons">
+                  <Button
+                    title={"Acessar"}
+                    href={"https://dsrgrafica.com.br/"}
+                  ></Button>
+                  <Button
+                    title={"Repositório"}
+                    href={"https://github.com/murilloressineti/dsr-grafica"}
+                  ></Button>
+                </div>
+              </div>
+              <div class="card">
+                <img
+                  src={projectsCard}
+                  alt="Card demonstrando projeto realizado"
+                />
+                <p>
+                  Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.
+                </p>
+                <div class="buttons">
+                  <Button
+                    title={"Acessar"}
+                    href={"https://rockmovies.netlify.app/"}
+                  ></Button>
+                  <Button
+                    title={"Repositório"}
+                    href={
+                      "https://github.com/murilloressineti/rocketmovies-frontend"
+                    }
+                  ></Button>
+                </div>
               </div>
             </div>
           </div>
@@ -93,11 +95,13 @@ export function Home() {
 
         <Section>
           <div id="skills" class="skills">
-            <h2>Habilidades</h2>
-            <p>
-              Minhas especialidades: técnicas e conhecimentos essenciais para
-              tecnologias web.
-            </p>
+            <div className="skills-content">
+              <h2>Habilidades</h2>
+              <p>
+                Minhas especialidades: técnicas e conhecimentos essenciais para
+                tecnologias web.
+              </p>
+            </div>
 
             <SkillCard></SkillCard>
           </div>
