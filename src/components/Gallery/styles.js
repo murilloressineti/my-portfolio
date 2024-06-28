@@ -54,6 +54,11 @@ export const Container = styled.div`
     grid-column: 3 / 4;
     grid-row: 2 / 4;
   }
+
+  @media (min-width: 768px) {
+    grid-template-rows: 27rem auto 27rem auto;
+    width: 100%;
+  }    
 `;
 
 export const ButtonContainer = styled.div`
@@ -66,9 +71,13 @@ export const ButtonContainer = styled.div`
   justify-content: ${({ isRightClicked }) =>
     isRightClicked ? "flex-start" : "flex-end"};
   padding-right: 4rem;
-  padding-left: 17rem;
+  padding-left: 18rem;
   transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
   transition: justify-content 0.8s ease-in-out, transform 0.8s ease-in-out;
+
+  @media (min-width: 768px) {
+    display: none;
+  }   
 `;
 
 export const StyledButton = styled.button`

@@ -10,6 +10,10 @@ export const Container = styled.footer`
   outline: none;
   font-size: 1.6rem;
   text-align: center;
+
+  @media (min-width: 768px) {
+    padding-bottom: 6.4rem;
+  }
 `;
 
 export const Icons = styled.div`

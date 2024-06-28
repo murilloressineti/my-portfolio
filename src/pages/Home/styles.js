@@ -80,6 +80,10 @@ export const Content = styled.main`
     .card {
       text-align: center;
 
+      .image-card {
+        width: 50rem;
+      }
+
       p {
         color: ${({ theme }) => theme.COLORS.BLACK};
         font-size: 1.6rem;
@@ -113,7 +117,7 @@ export const Content = styled.main`
   }
 
   .about-me {
-    .about-me-subtitle {
+    .about-me-content {
       padding: 0 1.6rem 0;
 
       h3 {
@@ -237,25 +241,35 @@ export const Content = styled.main`
         p {
           font-size: 1.8rem;
           font-weight: bold;
+          margin-bottom: 10rem;
         }
       }
     }
 
     .about-me {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 3.2rem;
+      flex-direction: column;
+      margin-bottom: 12.8rem;
 
-      .about-me-subtitle h3 {
-        font-size: 2rem;
+      .about-me-content {
+        padding: 0 14rem;
+        margin-bottom: 2.8rem;
+        
+        h2 {
+          font-size: 7.6rem;
+        }
+
+        h3 {
+          font-size: 2.6rem;
+        }
       }
     }
 
     .form {
       display: flex;
       justify-content: center;
-      padding: 0 3.2rem;
+      padding: 0 14rem;
+      margin-bottom: 12.8rem;
     }
   }
 `;

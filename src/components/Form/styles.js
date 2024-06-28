@@ -69,4 +69,10 @@ export const Container = styled.form`
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
     }
   }
+
+  @media (min-width: 768px) {
+    legend > h2 {
+      font-size: 6.6rem;
+    }
+  }
 `;

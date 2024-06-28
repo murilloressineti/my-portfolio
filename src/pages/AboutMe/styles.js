@@ -10,13 +10,13 @@ export const Container = styled.div`
     "header"
     "content"
     "footer";
-       
+
   header {
     justify-content: center;
-    
-   button {
-    display: none;
-   }
+
+    button {
+      display: none;
+    }
   }
 `;
 
@@ -46,8 +46,8 @@ export const Content = styled.main`
       margin-bottom: 0.8rem;
     }
 
-    div:nth-of-type(1) {
-      margin-top: 3.9rem;
+    .about-me-text div {
+      margin-top: 4rem;
     }
 
     .background {
@@ -118,5 +118,64 @@ export const Content = styled.main`
 
   Section:nth-of-type(4) {
     border: none;
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 8rem;
+      width: 100%;
+    }
+
+    .about-me {
+      padding: 0 10rem;
+      
+      .about-me-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 12.8rem;
+        gap: 18rem;
+
+        .about-me-text div {
+          margin-top: 4.8rem;
+        }
+      }
+
+      .background {
+        margin-top: 12rem;
+      }
+    }
+
+    .skills {
+      padding: 0 10rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 32rem;
+    }
+
+    .experience {
+      padding: 0 10rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 32rem;
+
+      .experience-content > .experience-data {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .form {
+      display: flex;
+      justify-content: center;
+      padding: 0 14rem;
+      margin-bottom: 12.8rem;
+    }
   }
 `;

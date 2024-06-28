@@ -49,7 +49,8 @@ export function Home() {
 
             <div className="cards">
               <div class="card">
-                <img
+                <img 
+                  class="image-card"
                   src={projectsCard}
                   alt="Card demonstrando projeto realizado"
                 />
@@ -70,6 +71,7 @@ export function Home() {
               </div>
               <div class="card">
                 <img
+                  class="image-card"
                   src={projectsCard}
                   alt="Card demonstrando projeto realizado"
                 />
@@ -109,7 +111,7 @@ export function Home() {
 
         <Section>
           <div id="about-me" class="about-me">
-            <div class="about-me-subtitle">
+            <div class="about-me-content">
               <h2>Sobre mim</h2>
               <Link to="/sobre-mim">
                 <h3>Conheça + sobre mim</h3>
