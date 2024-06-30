@@ -147,7 +147,91 @@ export const Content = styled.main`
     border: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .hero {
+      padding: 0 8rem;
+      margin-bottom: 10rem;
+
+      .hero-content {
+        width: 35rem;
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          font-size: 10rem;
+        }
+
+        p {
+          font-size: 1.7rem;
+        }
+      }
+
+      .background {
+        img {
+          height: 50rem;
+        }
+      }
+    }
+
+    .projects {
+      padding: 0 8rem;
+      margin-bottom: 10rem;
+
+      h2 {
+        font-size: 6rem;
+      }
+
+      p {
+        font-size: 1.7rem;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+
+        .card {
+          width: 100%;
+          max-width: 30rem;
+        }
+
+        .buttons {
+          width: 100%;
+          max-width: 25rem;
+        }
+      }
+    }
+
+    .skills {
+      padding: 0 8rem;
+      margin-bottom: 10rem;
+
+      p {
+        font-size: 1.7rem;
+      }
+    }
+
+    .about-me {
+      .about-me-content {
+        padding: 0 8rem;
+        margin-bottom: 2rem;
+
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .form {
+      padding: 0 8rem;
+      margin-bottom: 15rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
     .hero {
       display: flex;
       justify-content: space-between;

@@ -6,7 +6,6 @@ export const Container = styled.div`
   justify-content: space-between;
   gap: 1.6rem;
   overflow: hidden;
-
 `;
 
 export const ImageContainer = styled.div`
@@ -21,6 +20,15 @@ export const ImageContainer = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+
+  @media (max-width: 1024px) {
+    gap: 1em;
+  }
+
+  @media (max-width: 768px) {
+    gap: 2em;
+    flex-wrap: wrap;
   }
 `;
 

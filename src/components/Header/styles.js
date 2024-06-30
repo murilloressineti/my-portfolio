@@ -22,7 +22,11 @@ export const Container = styled.header`
     color: ${({ theme }) => theme.COLORS.GRAY_50};
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 600px) and (max-width: 1024px) {
+    padding: 0 8rem;
+  }
+
+  @media (min-width: 1024px) {
     padding: 0 14rem;
   }
 `;

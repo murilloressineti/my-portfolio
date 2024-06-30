@@ -18,6 +18,13 @@ export const Container = styled.div`
       display: none;
     }
   }
+
+  @media (min-width: 600px) and (max-width: 1024px) {
+    header {
+      padding: 0 5rem;
+      justify-content: left;
+    }
+  }
 `;
 
 export const Content = styled.main`
@@ -120,7 +127,66 @@ export const Content = styled.main`
     border: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 600px) and (max-width: 1024px) {
+
+    .about-me {
+      padding: 0 5rem;
+
+      .about-me-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8rem;
+        gap: 2rem;
+
+        .about-me-text div {
+          margin-top: 4.8rem;
+        }
+      }
+
+      .background {
+        margin-bottom: 10rem;
+      }
+    }
+
+    .skills {
+      padding: 0 5rem;
+      margin-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .experience {
+      padding: 0 5rem;
+      margin-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      .experience-content > .experience-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .form {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      padding: 0 8rem;
+      margin-bottom: 16rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
     h2 {
       font-size: 8rem;
       width: 100%;
@@ -128,7 +194,7 @@ export const Content = styled.main`
 
     .about-me {
       padding: 0 10rem;
-      
+
       .about-me-content {
         display: flex;
         flex-direction: row;
