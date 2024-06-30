@@ -81,7 +81,7 @@ export const Content = styled.main`
       text-align: center;
 
       .image-card {
-        width: 50rem;
+        
       }
 
       p {
@@ -269,7 +269,7 @@ export const Content = styled.main`
       display: flex;
       justify-content: center;
       padding: 0 14rem;
-      margin-bottom: 12.8rem;
+      margin-bottom: 20rem;
     }
   }
 `;

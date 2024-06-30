@@ -134,7 +134,7 @@ export const Content = styled.main`
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 12.8rem;
+        margin-bottom: 12rem;
         gap: 18rem;
 
         .about-me-text div {
@@ -143,12 +143,13 @@ export const Content = styled.main`
       }
 
       .background {
-        margin-top: 12rem;
+        margin-bottom: 12rem;
       }
     }
 
     .skills {
       padding: 0 10rem;
+      margin-bottom: 8rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -158,6 +159,7 @@ export const Content = styled.main`
 
     .experience {
       padding: 0 10rem;
+      margin-bottom: 8rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -175,7 +177,7 @@ export const Content = styled.main`
       display: flex;
       justify-content: center;
       padding: 0 14rem;
-      margin-bottom: 12.8rem;
+      margin-bottom: 20rem;
     }
   }
 `;

@@ -1,11 +1,13 @@
 import { Container, Content } from "./styles";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 import { Header } from "../../components/Header";
 import { Section } from "../../components/Section";
 import { InitialIcons } from "../../components/InitialIcons";
 import { Button } from "../../components/Button";
-import { SkillCard } from "../../components/SkillCard";
+import { SkillCardMobile } from "../../components/SkillCardMobile";
+import { SkillCardDesktop } from "../../components/SkillCardDesktop";
 import { Gallery } from "../../components/Gallery";
 import { Form } from "../../components/Form";
 import { Footer } from "../../components/Footer";
@@ -14,13 +16,26 @@ import imageBackground from "../../assets/photo.jpg";
 import projectsCard from "../../assets/projects-card/thumb.png";
 
 export function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isMobileView = window.innerWidth <= 768;
+      setIsMobile(isMobileView);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <Container>
       <Header />
 
       <Content>
         <Section>
-          <div id="hero" class="hero">
+          <div id="hero" className="hero">
             <div class="hero-content">
               <h3>Olá 👋, sou o Murillo Ressineti</h3>
               <h2>FRONT-END DEVELOPER</h2>
@@ -38,7 +53,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="projects" class="projects">
+          <div id="projects" className="projects">
             <div className="projects-content">
               <h2>Projetos</h2>
               <p>
@@ -96,7 +111,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="skills" class="skills">
+          <div id="skills" className="skills">
             <div className="skills-content">
               <h2>Habilidades</h2>
               <p>
@@ -105,12 +120,12 @@ export function Home() {
               </p>
             </div>
 
-            <SkillCard></SkillCard>
+            {isMobile ? <SkillCardMobile /> : <SkillCardDesktop />}
           </div>
         </Section>
 
         <Section>
-          <div id="about-me" class="about-me">
+          <div id="about-me" className="about-me">
             <div class="about-me-content">
               <h2>Sobre mim</h2>
               <Link to="/sobre-mim">
@@ -123,7 +138,7 @@ export function Home() {
         </Section>
 
         <Section>
-          <div id="form" class="form">
+          <div id="form" className="form">
             <Form />
           </div>
         </Section>

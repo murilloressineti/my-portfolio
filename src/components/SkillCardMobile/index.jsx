@@ -6,10 +6,13 @@ import htmlIcon from "../../assets/skills-card/html.svg";
 import cssIcon from "../../assets/skills-card/css.svg";
 import jsIcon from "../../assets/skills-card/js.svg";
 import reactIcon from "../../assets/skills-card/react.svg";
+import node from "../../assets/skills-card/node.svg";
+import mysql from "../../assets/skills-card/mysql.svg";
+import figma from "../../assets/skills-card/figma.svg";
 
-const images = [htmlIcon, cssIcon, jsIcon, reactIcon];
+const images = [htmlIcon, cssIcon, jsIcon, reactIcon, node, mysql, figma];
 
-export function SkillCard() {
+export function SkillCardMobile() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
