@@ -190,17 +190,26 @@ export const Content = styled.main`
       .cards {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 10rem;
 
         .card {
           width: 100%;
           max-width: 30rem;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         .buttons {
           width: 100%;
           max-width: 25rem;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
