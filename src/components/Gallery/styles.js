@@ -17,11 +17,18 @@ export const Container = styled.div`
   transition: transform 0.5s ease-in-out;
 
   figure {
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+
+      }
     }
   }
 
@@ -74,6 +81,7 @@ export const ButtonContainer = styled.div`
   padding-left: 18rem;
   transform: ${({ scrollPosition }) => `translateX(${scrollPosition * 35}%)`};
   transition: justify-content 0.8s ease-in-out, transform 0.8s ease-in-out;
+  z-index: 10;
 
   @media (min-width: 768px) {
     display: none;
