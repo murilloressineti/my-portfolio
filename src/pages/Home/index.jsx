@@ -12,7 +12,7 @@ import { Gallery } from "../../components/Gallery";
 import { Form } from "../../components/Form";
 import { Footer } from "../../components/Footer";
 
-import imageBackground from "../../assets/photo.jpg";
+import imageBackground from "../../assets/background.jpg";
 import projectsCard from "../../assets/projects-card/thumb.png";
 
 export function Home() {

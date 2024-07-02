@@ -210,7 +210,12 @@ export const Content = styled.main`
 
       .background {
         margin-bottom: 12rem;
+
+        img {
+          height: 46rem;
+        }
       }
+      
     }
 
     .skills {

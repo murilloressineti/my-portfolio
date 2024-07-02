@@ -6,7 +6,7 @@ import { InitialIcons } from "../../components/InitialIcons";
 import { Form } from "../../components/Form";
 import { Footer } from "../../components/Footer";
 
-import imageBackgroundAboutMe from "../../assets/photo.jpg";
+import imageBackgroundAboutMe from "../../assets/about-me/background.jpg";
 
 export function AboutMe() {
   return (
