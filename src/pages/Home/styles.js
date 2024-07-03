@@ -81,7 +81,9 @@ export const Content = styled.main`
       text-align: center;
 
       .image-card {
-        
+        width: 100%;
+        max-width: 40rem;
+        height: auto;
       }
 
       p {
@@ -196,8 +198,6 @@ export const Content = styled.main`
 
         .card {
           width: 100%;
-          max-width: 30rem;
-
           display: flex;
           flex-direction: column;
           justify-content: center;

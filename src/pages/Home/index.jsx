@@ -13,7 +13,8 @@ import { Form } from "../../components/Form";
 import { Footer } from "../../components/Footer";
 
 import imageBackground from "../../assets/background.jpg";
-import projectsCard from "../../assets/projects-card/thumb.png";
+import projectsCardDsr from "../../assets/projects-card/thumb-dsr.png";
+import projectsCardRock from "../../assets/projects-card/thumb-rockmovies.png";
 
 export function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -64,11 +65,13 @@ export function Home() {
 
             <div className="cards">
               <div class="card">
-                <img 
-                  class="image-card"
-                  src={projectsCard}
-                  alt="Card demonstrando projeto realizado"
-                />
+                <a href="https://dsrgrafica.com.br/" target="_blank">
+                  <img
+                    class="image-card"
+                    src={projectsCardDsr}
+                    alt="Card demonstrando projeto realizado"
+                  />
+                </a>
                 <p>
                   Site institucional responsivo para gráfica, exibindo serviços,
                   portfólio e contato.
@@ -85,11 +88,13 @@ export function Home() {
                 </div>
               </div>
               <div class="card">
-                <img
-                  class="image-card"
-                  src={projectsCard}
-                  alt="Card demonstrando projeto realizado"
-                />
+                <a href="https://rockmovies.netlify.app/" target="_blank">
+                  <img
+                    class="image-card"
+                    src={projectsCardRock}
+                    alt="Card demonstrando projeto realizado"
+                  />
+                </a>
                 <p>
                   Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.
                 </p>
