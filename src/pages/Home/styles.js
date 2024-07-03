@@ -240,7 +240,7 @@ export const Content = styled.main`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1026px) {
     .hero {
       display: flex;
       justify-content: space-between;

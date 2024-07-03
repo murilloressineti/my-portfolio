@@ -199,7 +199,7 @@ export const Content = styled.main`
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1026px) {
     h2 {
       font-size: 8rem;
       width: 100%;
