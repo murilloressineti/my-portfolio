@@ -9,8 +9,8 @@ import card5 from "../../assets/about-me/guitar.jpg";
 import card6 from "../../assets/about-me/myself.jpg";
 
 export function Gallery() {
-  const [scrollposition, setScrollPosition] = useState(0);
-  const [isrightclicked, setIsRightClicked] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isRightClicked, setIsRightClicked] = useState(false);
 
   const handleScrollLeft = () => {
     setScrollPosition((prevPosition) => Math.max(prevPosition - 1, 0));
@@ -23,17 +23,17 @@ export function Gallery() {
   };
 
   return (
-    <Container scrollposition={scrollposition}>
+    <Container $scrollposition={scrollPosition}>
       <ButtonContainer
-        scrollposition={scrollposition}
-        isrightclicked={isrightclicked ? "true" : undefined}
+        $scrollposition={scrollPosition}
+        $isrightclicked={isRightClicked ? "true" : undefined}
       >
-        {scrollposition > 0 && (
+        {scrollPosition > 0 && (
           <StyledButton onClick={handleScrollLeft} className="inverted">
             <img src={arrowIcon} alt="Arrow" />
           </StyledButton>
         )}
-        {scrollposition < 1 && (
+        {scrollPosition < 1 && (
           <StyledButton onClick={handleScrollRight}>
             <img src={arrowIcon} alt="Arrow" />
           </StyledButton>

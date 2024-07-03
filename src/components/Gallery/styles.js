@@ -13,7 +13,7 @@ export const Container = styled.div`
   padding-bottom: 6.4rem;
   overflow: hidden;
 
-  transform: ${({ scrollposition }) => `translateX(-${scrollposition * 40}%)`};
+  transform: ${({ $scrollposition }) => `translateX(-${$scrollposition * 40}%)`};
   transition: transform 0.5s ease-in-out;
 
   figure {
@@ -27,7 +27,6 @@ export const Container = styled.div`
 
       &:hover {
         transform: scale(1.1);
-
       }
     }
   }
@@ -75,11 +74,11 @@ export const ButtonContainer = styled.div`
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: ${({ isrightclicked }) =>
-    isrightclicked ? "flex-start" : "flex-end"};
+  justify-content: ${({ $isrightclicked }) =>
+    $isrightclicked ? "flex-start" : "flex-end"};
   padding-right: 4rem;
   padding-left: 18rem;
-  transform: ${({ scrollposition }) => `translateX(${scrollposition * 35}%)`};
+  transform: ${({ $scrollposition }) => `translateX(${$scrollposition * 35}%)`};
   transition: justify-content 0.8s ease-in-out, transform 0.8s ease-in-out;
   z-index: 10;
 

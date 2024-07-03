@@ -13,7 +13,7 @@ import figma from "../../assets/skills-card/figma.svg";
 const images = [htmlIcon, cssIcon, jsIcon, reactIcon, node, mysql, figma];
 
 export function SkillCardDesktop() {
-  const [currentindex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleSwipe = (direction) => {
@@ -58,7 +58,7 @@ export function SkillCardDesktop() {
   const getVisibleImages = () => {
     let visibleImages = [];
     for (let i = 0; i < 4; i++) {
-      const index = (currentindex + i) % images.length;
+      const index = (currentIndex + i) % images.length;
       visibleImages.push(images[index]);
     }
     return visibleImages;
@@ -72,7 +72,7 @@ export function SkillCardDesktop() {
         className="inverted"
         onClick={() => handleSwipe("right")}
       />
-      <ImageContainer currentindex={currentindex}>
+      <ImageContainer $currentIndex={currentIndex}>
         {getVisibleImages().map((image, index) => (
           <img key={index} src={image} alt={`skill ${index}`} />
         ))}

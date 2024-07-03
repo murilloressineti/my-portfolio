@@ -14,7 +14,7 @@ export const ImageContainer = styled.div`
   justify-content: center;
   gap: 6em;
   transition: transform 0.3s ease-in-out;
-  transform: ${({ currentIndex }) => `translateX(-${currentIndex * 0.1}%)`};
+  transform: ${({ $currentIndex }) => `translateX(-${$currentIndex * 0.1}%)`};
 
   img {
     width: 100%;
