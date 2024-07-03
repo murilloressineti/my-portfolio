@@ -37,7 +37,7 @@ export function Home() {
       <Content>
         <Section>
           <div id="hero" className="hero">
-            <div class="hero-content">
+            <div className="hero-content">
               <h3>Olá 👋, sou o Murillo Ressineti</h3>
               <h2>FRONT-END DEVELOPER</h2>
               <p>
@@ -47,7 +47,7 @@ export function Home() {
               <InitialIcons />
             </div>
 
-            <div class="background">
+            <div className="background">
               <img src={imageBackground} alt="Imagem Murillo Ressineti" />
             </div>
           </div>
@@ -64,10 +64,10 @@ export function Home() {
             </div>
 
             <div className="cards">
-              <div class="card">
+              <div className="card">
                 <a href="https://dsrgrafica.com.br/" target="_blank">
                   <img
-                    class="image-card"
+                    className="image-card"
                     src={projectsCardDsr}
                     alt="Card demonstrando projeto realizado"
                   />
@@ -76,7 +76,7 @@ export function Home() {
                   Site institucional responsivo para gráfica, exibindo serviços,
                   portfólio e contato.
                 </p>
-                <div class="buttons">
+                <div className="buttons">
                   <Button
                     title={"Acessar"}
                     href={"https://dsrgrafica.com.br/"}
@@ -87,10 +87,10 @@ export function Home() {
                   ></Button>
                 </div>
               </div>
-              <div class="card">
+              <div className="card">
                 <a href="https://rockmovies.netlify.app/" target="_blank">
                   <img
-                    class="image-card"
+                    className="image-card"
                     src={projectsCardRock}
                     alt="Card demonstrando projeto realizado"
                   />
@@ -98,7 +98,7 @@ export function Home() {
                 <p>
                   Gerenciador de filmes, desenvolvido no bootcamp da Rocketseat.
                 </p>
-                <div class="buttons">
+                <div className="buttons">
                   <Button
                     title={"Acessar"}
                     href={"https://rockmovies.netlify.app/"}
@@ -131,7 +131,7 @@ export function Home() {
 
         <Section>
           <div id="about-me" className="about-me">
-            <div class="about-me-content">
+            <div className="about-me-content">
               <h2>Sobre mim</h2>
               <Link to="/sobre-mim">
                 <h3>Conheça + sobre mim</h3>

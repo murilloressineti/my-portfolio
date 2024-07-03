@@ -10,7 +10,7 @@ export function Form() {
           <h2>Mande uma mensagem para mim!</h2>
         </legend>
 
-        <div class="input-wrapper">
+        <div className="input-wrapper">
           <input
             type="text"
             id="name"
@@ -20,7 +20,7 @@ export function Form() {
           />
         </div>
 
-        <div class="input-wrapper">
+        <div className="input-wrapper">
           <input
             type="email"
             id="email"
@@ -30,7 +30,7 @@ export function Form() {
           />
         </div>
 
-        <div class="input-wrapper">
+        <div className="input-wrapper">
           <textarea
             name="message"
             id="message"

@@ -52,7 +52,7 @@ export function AboutMe() {
               </div>
             </div>
 
-            <div class="background">
+            <div className="background">
               <img
                 src={imageBackgroundAboutMe}
                 alt="Imagem Murillo Ressineti"
