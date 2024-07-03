@@ -17,7 +17,7 @@ export const ImageContainer = styled.div`
     height: 100%;
     object-fit: contain;
     transition: opacity 0.3s ease-in-out;
-    opacity: ${({ isTransitioning }) => (isTransitioning ? 0 : 1)};
+    opacity: ${({ istransitioning }) => (istransitioning === "true" ? 0 : 1)};
   }
 `;
 

@@ -35,7 +35,7 @@ export const MenuToggle = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: ${({ theme, isOpen }) => (isOpen ? theme.COLORS.BLUE : theme.COLORS.GRAY_50)};
+  color: ${({ theme, isopen }) => (isopen ? theme.COLORS.BLUE : theme.COLORS.GRAY_50)};
   display: flex;
   align-items: center;
 
@@ -66,8 +66,8 @@ export const Nav = styled.nav`
   transform: translateY(-10px);
   transition: opacity 0.3s ease, visibility 0s linear 0.3s, transform 0.3s ease;
 
-  ${({ isOpen }) =>
-    isOpen &&
+  ${({ isopen }) =>
+    isopen &&
     css`
       opacity: 1;
       visibility: visible;

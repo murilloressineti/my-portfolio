@@ -5,11 +5,11 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen, AiOutlineTool, AiOutlineUser, AiOutlineMail } from "react-icons/ai";
 
 export function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isopen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(!isopen);
   };
 
   const handleScrollToSection = (id) => {
@@ -33,10 +33,10 @@ export function Header() {
       <Link to={"/"}>
         <h1>Ressineti.dev</h1>
       </Link>
-      <MenuToggle isOpen={isOpen} onClick={handleToggle}>
+      <MenuToggle isopen={isopen ? "true" : undefined} onClick={handleToggle}>
         <FaBars />
       </MenuToggle>
-      <Nav isOpen={isOpen}>
+      <Nav isopen={isopen ? "true" : undefined}>
         <NavMenu>
           <li>
             <button onClick={() => handleScrollToSection("projects")}>

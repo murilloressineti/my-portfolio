@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Container, ImageContainer, Arrow } from "./styles";
-
 import arrowIcon from "../../assets/skills-card/arrow.svg";
 import htmlIcon from "../../assets/skills-card/html.svg";
 import cssIcon from "../../assets/skills-card/css.svg";
@@ -14,10 +13,10 @@ const images = [htmlIcon, cssIcon, jsIcon, reactIcon, node, mysql, figma];
 
 export function SkillCardMobile() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [istransitioning, setIsTransitioning] = useState(false);
 
   const handleSwipe = (direction) => {
-    if (!isTransitioning) {
+    if (!istransitioning) {
       setIsTransitioning(true);
       setTimeout(() => {
         if (direction === "left") {
@@ -63,7 +62,7 @@ export function SkillCardMobile() {
         className="inverted"
         onClick={() => handleSwipe("right")}
       />
-      <ImageContainer isTransitioning={isTransitioning}>
+      <ImageContainer istransitioning={istransitioning ? "true" : undefined}>
         <img src={images[currentIndex]} alt="skill" />
       </ImageContainer>
       <Arrow src={arrowIcon} alt="arrow" onClick={() => handleSwipe("left")} />
