@@ -6,6 +6,7 @@ export default {
 
     GRAY_50: "rgba(0, 0, 0, 0.5)",
     GRAY_70: "rgba(0, 0, 0, 0.7)",
+    GRAY_BACKGROUND: "#c7c7c7",
 
     BLUE: "#81CAFF",
     BLUE_TRANSPARENT: "rgba(129, 202, 255, 0.1)",

@@ -59,15 +59,28 @@ export const Content = styled.main`
 
     .background {
       margin-top: 6rem;
-      text-align: center;
+      height: 42.5rem;
+      width: 100%;
+      border-radius: 1.6rem;
+      box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
+      background-color: ${({ theme }) => theme.COLORS.GRAY_BACKGROUND};
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       img {
+        position: absolute;
         object-fit: cover;
-        height: 42.5rem;
-        width: 100%;
-
         border-radius: 1.6rem;
-        box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
+        max-width: 100%;
+        max-height: 100%;
+        transition: transform 0.3s ease;
+      }
+
+      img:hover{
+        transform: scale(1.1);
       }
     }
   }
@@ -213,6 +226,7 @@ export const Content = styled.main`
 
         img {
           height: 46rem;
+          max-width: auto;
         }
       }
       
