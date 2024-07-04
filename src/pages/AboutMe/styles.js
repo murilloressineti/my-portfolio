@@ -72,6 +72,7 @@ export const Content = styled.main`
 
       img {
         position: absolute;
+        object-position: center bottom;
         object-fit: cover;
         border-radius: 1.6rem;
         max-width: 100%;

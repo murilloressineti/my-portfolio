@@ -53,6 +53,7 @@ export const Content = styled.main`
 
       img {
         object-fit: cover;
+        object-position: center 20%;
         height: 40rem;
         width: 100%;
         border-radius: 1.6rem;
