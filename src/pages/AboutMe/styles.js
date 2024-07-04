@@ -59,7 +59,7 @@ export const Content = styled.main`
 
     .background {
       margin-top: 6rem;
-      height: 42.5rem;
+      height: 35rem;
       width: 100%;
       border-radius: 1.6rem;
       box-shadow: 0 0.1rem 0.9rem rgba(0, 0, 0, 0.2);
@@ -73,11 +73,9 @@ export const Content = styled.main`
       img {
         position: absolute;
         bottom: 0;
-        object-position: center bottom;
         object-fit: cover;
         border-radius: 1.6rem;
-        width: 100%;
-        height: auto;
+        max-width: 100%;
         max-height: 100%;
         transition: transform 0.3s ease;
       }
