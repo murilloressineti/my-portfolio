@@ -13,6 +13,7 @@ export const Container = styled.div`
     position: relative;
     overflow: hidden;
     z-index: 0;
+    color: ${({ theme }) => theme.COLORS.BLACK};
   }
 
   button::before {

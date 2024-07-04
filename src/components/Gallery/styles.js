@@ -76,8 +76,8 @@ export const ButtonContainer = styled.div`
   align-items: center;
   justify-content: ${({ $isrightclicked }) =>
     $isrightclicked ? "flex-start" : "flex-end"};
-  padding-right: 4rem;
-  padding-left: 18rem;
+  padding-right: 2rem;
+  padding-left: 16rem;
   transform: ${({ $scrollposition }) => `translateX(${$scrollposition * 35}%)`};
   transition: justify-content 0.8s ease-in-out, transform 0.8s ease-in-out;
   z-index: 10;

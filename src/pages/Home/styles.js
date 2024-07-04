@@ -36,7 +36,7 @@ export const Content = styled.main`
       font-size: 5.8rem;
       line-height: 90%;
       margin-bottom: 1.2rem;
-      max-width: 21.5rem;
+      max-width: 30rem;
     }
 
     p {
@@ -126,7 +126,6 @@ export const Content = styled.main`
         font-size: 1.6rem;
         text-decoration: underline;
         color: ${({ theme }) => theme.COLORS.GRAY_50};
-        margin-top: 1.6rem;
         margin-bottom: 1.6rem;
         transition: color 0.3s ease;
 
