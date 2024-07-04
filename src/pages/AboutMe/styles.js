@@ -72,10 +72,12 @@ export const Content = styled.main`
 
       img {
         position: absolute;
+        bottom: 0;
         object-position: center bottom;
         object-fit: cover;
         border-radius: 1.6rem;
-        max-width: 100%;
+        width: 100%;
+        height: auto;
         max-height: 100%;
         transition: transform 0.3s ease;
       }
