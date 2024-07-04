@@ -2,8 +2,13 @@ import { Container, Icons } from "./styles";
 import downloadIcon from "../../assets/footer/download.svg";
 import linkedinIcon from "../../assets/footer/linkedin.svg";
 import githubIcon from "../../assets/footer/github.svg";
+import curriculoPDF from "../../assets/curriculo-murillo-front-end.pdf"
 
 export function Footer() {
+  const handleDownload = () => {
+    window.open(curriculoPDF, "_blank")
+  } 
+
   return (
     <Container>
       <Icons>
@@ -17,7 +22,7 @@ export function Footer() {
             <img src={githubIcon} alt="GitHub" />
           </button>
         </a>
-        <button className="download">
+        <button className="download" onClick={handleDownload}>
           <img src={downloadIcon} alt="Download" />
         </button>
       </Icons>
