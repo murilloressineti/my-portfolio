@@ -18,6 +18,10 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
   z-index: 1000;
 
+  .logo {
+    width: 4rem;
+  }
+
   a {
     color: ${({ theme }) => theme.COLORS.GRAY_50};
   }

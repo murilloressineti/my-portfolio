@@ -3,6 +3,7 @@ import { Container, Nav, NavMenu, MenuToggle } from "./styles";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen, AiOutlineTool, AiOutlineUser, AiOutlineMail } from "react-icons/ai";
+import logo from "../../assets/logo.png";
 
 export function Header() {
   const [isopen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export function Header() {
   return (
     <Container>
       <Link to={"/"}>
-        <h1>Ressineti.dev</h1>
+        <img src={logo} alt="Logotipo do portfólio. Letras 'MR' representando as iniciais de Murillo Ressineti." className="logo" />
       </Link>
       <MenuToggle isopen={isopen ? "true" : undefined} onClick={handleToggle}>
         <FaBars />
